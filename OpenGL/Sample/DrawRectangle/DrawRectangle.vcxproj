@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5d3c54cf-66ba-4a0f-bf0b-1f62862c63f5}</ProjectGuid>
-    <RootNamespace>Sample</RootNamespace>
+    <ProjectGuid>{e1c8afa9-eb0d-41a0-acdc-8bd2b911c0c4}</ProjectGuid>
+    <RootNamespace>DrawRectangle</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Sample</ProjectName>
+    <ProjectName>DrawRectangle</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

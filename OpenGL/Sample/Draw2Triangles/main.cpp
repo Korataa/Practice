@@ -1,3 +1,6 @@
+//This program sets up directx and then draws 2 triangles, one is orange and the other is yellow, we use 2 different fragment shaders to get the different colors
+
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>

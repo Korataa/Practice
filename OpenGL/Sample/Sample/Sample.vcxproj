@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ee9070e5-cc5b-45f9-a312-1c8cce5f38f0}</ProjectGuid>
-    <RootNamespace>CreateOpenGLWindow</RootNamespace>
+    <ProjectGuid>{5d3c54cf-66ba-4a0f-bf0b-1f62862c63f5}</ProjectGuid>
+    <RootNamespace>Sample</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Samples</ProjectName>
+    <ProjectName>Sample</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

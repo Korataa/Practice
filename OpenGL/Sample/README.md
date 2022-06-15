@@ -1,0 +1,1 @@
+Currently, this repo is just stuff from learnopengl.com that I'm working on.

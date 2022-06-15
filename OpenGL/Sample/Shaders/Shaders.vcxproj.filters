@@ -16,9 +16,4 @@
       <UniqueIdentifier>{2fc0d615-d14d-477c-a0dc-e6e4fe9fb673}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Shader.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-  </ItemGroup>
 </Project>

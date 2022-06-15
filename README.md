@@ -1,0 +1,1 @@
+This is a repository containing a bunch of practice projects and exercises that I've finished or am currently working on.

@@ -47,6 +47,12 @@ public:
 	//copy assignment operator
 	Vector<Type>& operator=(const Vector<Type>& oldVector)
 	{
+		if (this == &oldVector)
+		{
+			return *this;
+		}
+		delete[] this->arr;
+
 		Type* tempArray = new Type[oldVector.capacity];
 		for (int i = 0; i < oldVector.size; i++)
 			tempArray[i] = oldVector.arr[i];

@@ -36,7 +36,7 @@ public:
 
 	//Copy constructor
 	Vector(const Vector<Type>& oldVector)
-		: arr{ new Type[oldVector.size] }, size{oldVector.size}, capacity{oldVector.capacity}
+		: arr{ new Type[oldVector.capacity] }, size{oldVector.size}, capacity{oldVector.capacity}
 	{
 		for (int i = 0; i < size; i++)
 		{
@@ -47,7 +47,7 @@ public:
 	//copy assignment operator
 	Vector<Type>& operator=(const Vector<Type>& oldVector)
 	{
-		Type* tempArray = new Type[oldVector.size];
+		Type* tempArray = new Type[oldVector.capacity];
 		for (int i = 0; i < oldVector.size; i++)
 			tempArray[i] = oldVector.arr[i];
 

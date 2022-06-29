@@ -12,27 +12,49 @@ struct vec3
     int z;
 };
 
+//functions
+template <typename Type>
+void printVectorOfInts(Vector<Type> vector);
+
 int main()
 {
-    LinkedList list;
-    list.append(5);
-    list.append(10);
-    list.append(150);
-    list.append(50);
-    list.append(30);
-    list.append(80);
-    list.append(18);
-    list.append(1);
+    Vector<int> vector = { 1, 6, 9, 45, 24, 89, 143 };
+    std::cout << "before adding to vector:" << std::endl;
+    printVectorOfInts(vector);
 
-    try {
-        list.insertAt(7, 25);
-    }
-    catch (std::exception e)
+    int numOfElements = 50;
+    for (int i = 0; i < numOfElements; i++)
     {
-        std::cout << "Failed to insert into the list, index was probably out of bounds." << std::endl;
+        vector.add(i);
     }
 
-    list.printList();
+    std::cout << "\n\nafter adding to vector:" << std::endl;
+    printVectorOfInts(vector);
 
-    std::cout << "Size of linked list is: " << list.getSize() << std::endl;
+    //remove 25 elements (all at index 2) from vector
+    for (int i = 0; i < 25; i++)
+    {
+        vector.remove(2);
+    }
+    std::cout << "\n\nafter removing 25 elements from vector at index 2: " << std::endl;
+    printVectorOfInts(vector);
+
+    Vector<int> vector2 = { 87, 45, 32, 5, 78, 99, 1566 };
+    //copy assignment here
+    vector = vector2;
+
+    std::cout << "\n\nthis is vector after copy assignment with vector2: " << std::endl;
+    printVectorOfInts(vector);
+}
+
+template <typename Type>
+void printVectorOfInts(Vector<Type> vector)
+{
+    std::cout << "[";
+    for (int i = 0; i < vector.getSize(); i++)
+    {
+        //reached the end so dont print out last comma
+        std::cout << vector[i] << ", ";
+    }
+    std::cout << "]" << std::endl;
 }
